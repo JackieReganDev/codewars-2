@@ -9,4 +9,4 @@ function unusualFive() {
     return newArr.length
   }
 
-  
+  const unusualFive = () => "bambi".length
