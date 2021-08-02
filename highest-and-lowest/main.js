@@ -16,5 +16,5 @@
 function highAndLow(numbers){
     let numArray = numbers.split(' ')
     let sortedArray = numArray.sort((a,b)=>a-b)
-    return `${sortedArray.slice(-1)[0]} ${sortedArray[0]}`
+    return `${sortedArray.slice(-1)} ${sortedArray[0]}`
   }
