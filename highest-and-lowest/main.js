@@ -11,11 +11,10 @@
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
-// sort method, push and shift methods to remove last and first values from an array
+//split sort and slice methods
 
 function highAndLow(numbers){
     let numArray = numbers.split(' ')
     let sortedArray = numArray.sort((a,b)=>a-b)
-    return `${sortedArray.pop()} ${sortedArray.shift()}`
+    return `${sortedArray.slice(-1)[0]} ${sortedArray[0]}`
   }
-
