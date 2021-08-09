@@ -18,3 +18,6 @@ function highAndLow(numbers){
     let sortedArray = numArray.sort((a,b)=>a-b)
     return `${sortedArray.slice(-1)} ${sortedArray[0]}`
   }
+
+//    bracket notation
+

@@ -19,3 +19,8 @@ function makeNegative(num) {
   //arrow function 
 
   const makeNegative = num => (num < 0) ? num : -num
+
+//   Math.abs method
+function makeNegative(num) {
+    return -Math.abs(num);
+  }
