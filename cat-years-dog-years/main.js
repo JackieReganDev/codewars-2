@@ -34,7 +34,7 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   return [humanYears, catYears, dogYears]
   }
 
-  
+        
 //  shorter way
 
 var humanYearsCatYearsDogYears = function(y) {
