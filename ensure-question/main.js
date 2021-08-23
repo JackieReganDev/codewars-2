@@ -9,3 +9,5 @@ function ensureQuestion(s) {
     if(s[s.length-1] === '?') return s
     return `${s}?`
     }
+
+    const ensureQuestion = s => s.endsWith('?') ? s : s+'?'
