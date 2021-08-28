@@ -25,3 +25,7 @@ function alternateSqSum(arr){
       }
     }return newArr.reduce((acc, cv)=> acc + cv, 0)
   }
+
+//   with reduce only
+const alternateSqSum = arr =>
+  arr.reduce((acc, val, idx) => acc + (idx % 2 ? val ** 2 : val), 0);
