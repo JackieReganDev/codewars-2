@@ -18,3 +18,30 @@
 function removeChars(s) {
     return s.replace(/[^a-zA-Z ]/g, '')
   }
+
+  //filter methods 
+  function removeChars(s) {
+    return s.split('').filter(s => s === ' ' || s.toLowerCase() !== s.toUpperCase()).join('');
+  }
+
+  function removeChars(s) {
+    return s
+      .split('')
+      .filter(item => item.match(/[a-z]|[A-Z]| /))
+      .join('')                            
+    
+  }
+
+  //long way for loop
+  function removeChars(s) {
+    const alphabets = "abcdefghijklmnopqrstuvwxyz ";
+   const CAlphabets = "abcdefghijklmnopqrstuvwxyz".toUpperCase() + " ";
+   let res = "";
+   for (let i = 0; i < s.length; i++) {
+     if (CAlphabets.includes(s[i]) || alphabets.includes(s[i])) {
+       res += s[i];
+     }
+   }
+ 
+   return res;
+ }
