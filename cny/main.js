@@ -11,3 +11,6 @@ function usdcny(usd) {
     let cny = usd * 6.75
    return `${cny.toFixed(2)} Chinese Yuan`
   }
+
+  //arrow function
+  const usdcny = usd => `${(usd*6.75).toFixed(2)} Chinese Yuan`;
