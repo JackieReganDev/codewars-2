@@ -9,14 +9,4 @@
 // first(arr, 3) //=> ['a', 'b', 'c'];
 // first(arr, 0) //=> [];
 
-function first(arr, n = 1) {
-    let newArr = []
-    for(let i = 0; i < n; i++){
-      if(n>0){
-      newArr.push(arr[i])
-        }
-      else{ 
-        return newArr
-        }
-    }return newArr
-   }
+return arr.slice(0,n)
